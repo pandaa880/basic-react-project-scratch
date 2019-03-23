@@ -1,0 +1,25 @@
+{
+  "name": "react-project-setup-scratch",
+  "version": "1.0.0",
+  "description": "Basic react project from scratch using webpack and other necessary packages.",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "dev": "npm run webpack -- --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandaa880/basic-react-project-scratch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pandaa880/basic-react-project-scratch/issues"
+  },
+  "homepage": "https://github.com/pandaa880/basic-react-project-scratch#readme",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
