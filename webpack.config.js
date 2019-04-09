@@ -36,7 +36,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'React Project Setup from scratch',
       template: path.resolve(__dirname, 'public/index.html'),
