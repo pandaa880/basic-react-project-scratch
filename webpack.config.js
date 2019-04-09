@@ -2,6 +2,8 @@ const path = require('path');
 
 // plugins
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
 // config imports
 
@@ -34,16 +36,19 @@ module.exports = {
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'React Project Setup from scratch',
       template: path.resolve(__dirname, 'public/index.html'),
       filename: "./index.html"
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 9000,
-    quiet: true
+    quiet: true,
+    hot: true
   }
 }
